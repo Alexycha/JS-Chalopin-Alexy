@@ -14,7 +14,7 @@ console.log("la somme des entiers est de : " + somme);
 // exo 4.2 
 console.log("\nExo 4.2 Algorithmique : ")
 
-let tabpair = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14];
+let tabpair = [1, 2, 3, 4];
 let nbpair = 0;
 for (i = 0; i < tabpair.length; i++) {
     if (tabpair[i] % 2 == 0) {
@@ -27,9 +27,9 @@ console.log(nbpair + " entiers pairs dans le tableau.");
 
 //exo 4.3 
 console.log("\nExo 4.3 Algorithmique")
-function fusionTabEtTri() {
-    let tab1 = [1, 4];
-    let tab2 = [2, 3, 5];
+function fusiontri() {
+    let tab1 = [1, 5];
+    let tab2 = [2, 3, 4];
     let res = [];
 
     if (tab1.length > tab2.length) {
