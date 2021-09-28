@@ -62,7 +62,7 @@ function fusiontri() {
     console.log(res);
 }
 
-fusionTabEtTri();
+fusiontri();
 
 // exo 4.4 Dichotomie
 console.log("\nExo 4.4 Algorothmique");
