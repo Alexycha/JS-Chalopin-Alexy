@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="morpion.css" />
+    <title>Morpion Alexy Chalopin</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<body>
+    <div id="select">
+        <label for="j1">Nom du joueur 1 : </label>
+        <input type="text" id="j1" name="j1"><br><br>
+        <label for="j2">Nom du joueur 2 : </label>
+        <input type="text" id="j2" name="j2"><br><br>
+        <div classe="monselect">
+            <select id="grille" onchange="val()">
+                <option value="none">Sélectionnez un mode</option>
+                <option value="3">3*3</option>
+                <option value="4">4*4</option>
+                <option value="5">5*5</option>
+                <option value="6">6*6</option>
+                <option value="7">7*7</option>
+                <option value="8">8*8</option>
+            </select>
+        </div>
+        <div>
+            <input type="radio" id="normal" name="mode" value="normal" checked>
+            <label for="normal">Normal</label>
+        </div>
+
+        <div>
+            <input type="radio" id="complet" name="mode" value="complet">
+            <label for="complet">Complet</label>
+        </div>
+        <button onclick="jouer()">Jouer</button>
+    </div>
+    <div id="jeu">
+        <h1 align="center">Le jeu du morpion</h1>
+        <div class="container">
+            <div id="morpion">
+            </div>
+        </div>
+        <div id="joueur" align="center">
+            <span id="tour">Joueur</span><br>
+        </div>
+        <button onclick="change()" align="center">Changer de mode</button>
+    </div>
+    <script type="text/javascript" src="morpion.js"></script>
+</body>
+
+</html>
